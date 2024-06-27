@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./Header";
 
 function App() {
   const RandomNames = () => {
@@ -25,6 +26,7 @@ function App() {
         <p>Hello {RandomNames()}</p>
         {/* <p>{"deepak"}</p> */}
       </header>
+      <Header />
     </div>
   );
 }
