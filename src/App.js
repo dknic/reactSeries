@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const RandomNames = () => {
+    const name = ["bob", "levin", "methue"];
+    const int = Math.floor(Math.random() * 3);
+    return name[int];
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <p>Hello {RandomNames()}</p>
+        {/* <p>{"deepak"}</p> */}
       </header>
     </div>
   );
