@@ -1,17 +1,18 @@
 const Header = () => {
-  // embeded stylesheet
-  // const headerStyle = {
-  //   backgroundColor: "blue",
-  //   color: "white",
-  // };
+  //embeded stylesheet
+  const headerStyle = {
+    backgroundColor: "blue",
+    color: "white",
+  };
   return (
     <header
+      style={headerStyle}
 
-    //inline style
-    // style={{
-    //   backgroundColor: "blue",
-    //   color: "white",
-    // }}
+      //inline style
+      // style={{
+      //   backgroundColor: "blue",
+      //   color: "white",
+      // }}
     >
       <h1>Groceries List</h1>
     </header>
