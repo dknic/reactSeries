@@ -4,6 +4,14 @@ const Header = () => {
     backgroundColor: "blue",
     color: "white",
   };
+
+  const handleClick = () => {
+    alert("hello i am clicked");
+  };
+
+  const handleClick2 = (name, lastname) => {
+    alert(`hello i am ${name} ${lastname}`);
+  };
   return (
     <header
       style={headerStyle}
@@ -15,6 +23,12 @@ const Header = () => {
       // }}
     >
       <h1>Groceries List</h1>
+      <button onClick={handleClick}> Click me!</button>
+      <button onClick={() => handleClick2("Deepak", "kumar")}>
+        {" "}
+        Click me with paramiter!
+      </button>
+      <p> Hi this is button</p>
     </header>
   );
 };
