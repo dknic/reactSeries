@@ -6,7 +6,7 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    alert("hello i am clicked");
+    console.log("this is handleClick fun");
   };
 
   const handleClick2 = (name, lastname) => {
